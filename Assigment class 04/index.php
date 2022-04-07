@@ -17,7 +17,6 @@ echo  "<br>";
     }
     echo  "<br>";
     echo  "<br>";
-    Question 03: 
 
 // Factorial - I think everyone knows the word. Factorial of 4 is given below:
 // 4! = 4*3*2*1 = 24
@@ -48,5 +47,24 @@ echo  "<br>";
           echo "$x <br>";
           $x--;
     } 
+    echo  "<br>";
+    echo  "<br>";
+// Question 05: 
+// You have an array of your purchased product items. 
+// ['apple', 'orange', 'banana', 'mango']
+// Show all products as a table list.
+// Output should like that: “sl- 1 and product - apple”
 
+  $Products = [ 'orange', 'banana', 'mango' ,'apple'];
+  // var_dump ($Products);
+  // array(4) { 
+  //   [0]=> string(5) "apple"
+  //   [1]=> string(6) "orange"
+  //   [2]=> string(6) "banana"
+  //   [3]=> string(5) "mango" }
+ foreach($Products as $key => $value)
+   {
+   if(++$key){echo "sl $key and product- $value";
+   echo "<br>";}
+ }
 ?>

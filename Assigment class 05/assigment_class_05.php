@@ -33,6 +33,8 @@ echo "<br>";
 // Let’s think about a use case, Daraz admin’s have some products for uploads on their e-commerce site. So make an array of products which contains 5 products.
 // Go to daraz website and pick any 5 products and make your array.
 // Must mention Which type of array you have made.
+
+//Multidimensional Arrays
 $products_List = [
 
    ['Product-Name' => 'Shirt', 'Price'   => 320, 'size'  => 'M' , 'Color'         => 'Blue' ],

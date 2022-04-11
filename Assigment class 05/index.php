@@ -1,70 +1,39 @@
-<?php
-echo  "<br>";
-  // Question 02 Assignment : Question 02: 
-	//If we print 1-100, our output will be 100 times. But this time you have print out only the odd (বিজোড়) number within 1-100
-  // You have to rotate from 1 to 100.
-  // Your output message should like that, “3 is a odd number”
-  // Not need to print even number
-echo  "Question 02 Assignment";
-echo  "<br>";
-   $end=100;
-   $odd="is a odd number";
-    for($i=1;$i<$end;$i++)
-   {
-     if($i%2!=0){
-           echo  "$i $odd <br>";
-      }   
-    }
-    echo  "<br>";
-    echo  "<br>";
+ <?php
+     
 
-// Factorial - I think everyone knows the word. Factorial of 4 is given below:
-// 4! = 4*3*2*1 = 24
-// 6! = 6*5*4*3*2*1 = 720  
-// So let’s calculate the factorial of 7.
+/*
+Question 01:
+We have an array [12,34,2,6,78]. What kind of array is this? Find all prime numbers from this array.
+Step 1:First let us find the factors of the given number( factors
+       are  the number that completely divides the given number)
+Step 2: Then check the total number of factors of that number
+Step 3: Hence, If the total number of factors is more than two, it is not a prime number but a composite number. Because When a number is divisible by only one and itself, then it is a prime number.*/
 
-    echo  "Question 03 Assignment";
-    $num = 7;  
-    $factorial = 1;  
-    for ($x = $factorial; $x <= $num; $x++)   
-    {  
-      $factorial = $factorial * $x;  
-    }  
-    echo  "<br>";
-    echo "Factorial of $num is $factorial ";  
-    echo  "<br>";
-    echo  "<br>";
-   
-// Question 04 Assignment : 
-// Question 04: 
-// Print out from 100 - 1 using a while loop. 
-// You must use decrement operator
+// Iteration till n/2 
 
-    echo  "Question 04 Assignment";
-    echo  "<br>";
-    $x = 100;
-    while ( $x>=1) {
-          echo "$x <br>";
-          $x--;
-    } 
-    echo  "<br>";
-    echo  "<br>";
-// Question 05: 
-// You have an array of your purchased product items. 
-// ['apple', 'orange', 'banana', 'mango']
-// Show all products as a table list.
-// Output should like that: “sl- 1 and product - apple”
+ $number = [12,34,2,6,78] ;// indexed Array.
+ foreach ($number as $key=> $value) {
+     if($number){
 
-  $Products = [ 'orange', 'banana', 'mango' ,'apple'];
-  // var_dump ($Products);
-  // array(4) { 
-  //   [0]=> string(5) "apple"
-  //   [1]=> string(6) "orange"
-  //   [2]=> string(6) "banana"
-  //   [3]=> string(5) "mango" }
- foreach($Products as $key => $value)
-   {
-   if(++$key){echo "sl $key and product- $value";
-   echo "<br>";}
+	 }
  }
+
+
+$isPrime = true;
+$num = 13;
+
+for($i = 2; $i <= ($num / 2); $i++)
+{
+	if($num % $i == 0) 
+	{
+	  $isPrime = false;
+	}
+}
+if($isPrime == true)
+{
+	echo "$num is prime number";
+}else{
+	echo $num."  is not prime number";
+}
+
 ?>

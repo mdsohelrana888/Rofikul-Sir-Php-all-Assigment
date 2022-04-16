@@ -19,7 +19,7 @@ $results = array_sum(array_column($purchased_products, 'qty'));
 $total_price = array_sum(array_column($purchased_products, 'total_price'));
 echo "Total purchased qty=$results";
 echo "<br>";
-echo "total amount =$Total_price";
+echo "Total amount =$total_price";
 
 
 // Question 02  =======================================================================================       : 
@@ -34,14 +34,6 @@ $results               = array_unique(array_merge($first_email_array, $second_em
  echo "<pre>";
  print_r ($results);
  echo "</pre";
- echo "<br>";
- $purchased_products = array(
-    array('name' => 'banana',  'qty' => 10, 'total_price' => 550),
-    array('name' => 'apple',     'qty' => 50,  'total_price' => 1500),
-    array('name' => 'orange',  'qty' => 7,    'total_price' => 600),
-
-);
-
  echo "<br>";
  echo "<br>";
 

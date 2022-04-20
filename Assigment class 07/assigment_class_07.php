@@ -41,10 +41,12 @@
         </style>
 </head>
 <body>
-<!-- Question 01:======================================================================================
-Make a simple exam design using html css
-Then make a exam by using these questions
-Your questions must be come randomize order -->
+<!--Question 02:=====================================================================
+Let’s make a website which only contains our teams section.
+Now create an array of our teams at least three elements and make the our team section dynamic using php.
+Make an array of our teams including image
+Make a section of our team by using html css
+And dynamic the section by php -->
         <?php 
 $TeamMembers          =[ 
         ['Socailicon' => '<i class = "fa fa-facebook-f"></i> <i class           = "fa fa-twitter"></i> <i class           = "fa fa-instagram"></i> <i class = "fa fa-linkedin"></i>' , 'name' => 'Jillur Rahman', 'bloodgroup'       => 'O+', 'age'  => 29 , 'Postion' => 'CEO','image'           => 'image1.jpg'],

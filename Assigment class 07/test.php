@@ -46,11 +46,11 @@ Make a simple exam design using html css
 Then make a exam by using these questions
 Your questions must be come randomize order -->
         <?php 
-$TeamMembers =[
-        ['Socailicon' => '<i class = "fa fa-facebook-f"></i> <i class = "fa fa-twitter"></i> <i class = "fa fa-instagram"></i> <i class = "fa fa-linkedin"></i>' , 'name' => 'Jillur Rahman', 'bloodgroup' => 'O+', 'age' => 29 , 'Postion' => 'CEO','image' => 'image1.jpg'],
-        ['Socailicon' => '<i class = "fa fa-facebook-f"></i> <i class = "fa fa-twitter"></i> <i class = "fa fa-instagram"></i> <i class = "fa fa-linkedin"></i>' , 'name' => 'Rofikul Islam Rafi ', 'bloodgroup' => 'AB+', 'age' => 30 , 'Postion' => 'Instructor','image' => 'image2.jpg'],
-        ['Socailicon' => '<i class = "fa fa-facebook-f"></i> <bloodgroupi class = "fa fa-twitter"></bloodgroupi> <i class = "fa fa-instagram"></i> <i class = "fa fa-linkedin"></i>' , 'name' => 'Labib Hasan Rana', 'bloodgroup' => 'O-', 'age' => 20 , 'Postion' => 'Co-Instructor','image' => 'image3.jpg'],
-        ['Socailicon' => '<i class = "fa fa-facebook-f"></i> <i class = "fa fa-twitter"></i> <i class = "fa fa-instagram"></i> <i class = "fa fa-linkedin"></i>' , 'name' => 'Nurul Islam','bloodgroup' => 'B+',  'age' => 26 , 'Postion' => 'Instructor','image' => 'image4.jpg'] 
+$TeamMembers          =[ 
+        ['Socailicon' => '<i class = "fa fa-facebook-f"></i> <i class           = "fa fa-twitter"></i> <i class           = "fa fa-instagram"></i> <i class = "fa fa-linkedin"></i>' , 'name' => 'Jillur Rahman', 'bloodgroup'       => 'O+', 'age'  => 29 , 'Postion' => 'CEO','image'           => 'image1.jpg'],
+        ['Socailicon' => '<i class = "fa fa-facebook-f"></i> <i class           = "fa fa-twitter"></i> <i class           = "fa fa-instagram"></i> <i class = "fa fa-linkedin"></i>' , 'name' => 'Rofikul Islam Rafi ', 'bloodgroup' => 'AB+', 'age' => 30 , 'Postion' => 'Instructor','image'    => 'image2.jpg'],
+        ['Socailicon' => '<i class = "fa fa-facebook-f"></i> <bloodgroupi class = "fa fa-twitter"></bloodgroupi> <i class = "fa fa-instagram"></i> <i class = "fa fa-linkedin"></i>' , 'name' => 'Labib Hasan Rana', 'bloodgroup'    => 'O-', 'age'  => 20 , 'Postion' => 'Co-Instructor','image' => 'image3.jpg'],
+        ['Socailicon' => '<i class = "fa fa-facebook-f"></i> <i class           = "fa fa-twitter"></i> <i class           = "fa fa-instagram"></i> <i class = "fa fa-linkedin"></i>' , 'name' => 'Nurul Islam','bloodgroup'          => 'B+',  'age' => 26 , 'Postion' => 'Instructor','image'    => 'image4.jpg'] 
 ];
 ?>
         <!-- card design Started  ================= -->

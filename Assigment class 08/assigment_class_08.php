@@ -24,9 +24,36 @@ function people_age_Group($age) {
 };
 echo people_age_Group(-02);
 
+echo "<br>";
+echo "<br>";
 
+// 2.Create a function that will return the area of a rectangle, square, triangle
+// Rectangle function
+function rect_area($length, $width) //function has not declared
+{
+    $area = $length * $width;
+    echo "Area Of Rectangle with length " . $length . " & width " . $width . " is " . $area ;
+}
+echo rect_area(23,10);
+echo "<br>";
+echo "<br>";
+// square
+function areaSquare($side)
+{
+	$area = $side * $side;
+	return 'Area Of square'. $area;
+}
 
-
+echo areaSquare(10);
+echo "<br>";
+echo "<br>";
+// triangle
+function tri_area($length, $width) //function has not declared
+{
+    $area = ($length * $width)/2;
+    echo "Area Of Rectangle with length " . $length . " & width " . $width . " is " . $area ;
+}
+echo tri_area(23,10);
 
 
 

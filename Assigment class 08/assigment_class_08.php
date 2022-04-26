@@ -44,6 +44,8 @@ function areaSquare($side)
 	return 'Area Of square'. $area;
 }
 
+
+
 echo areaSquare(10);
 echo "<br>";
 echo "<br>";

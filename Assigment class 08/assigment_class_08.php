@@ -55,6 +55,30 @@ function tri_area($length, $width) //function has not declared
 }
 echo tri_area(23,10);
 
+echo "<br>";
+echo "<br>";
+
+// GPA function for result publishing===============================================
+function gpa_calculate($SubjectA,$SubjectB,$SubjectC,$SubjectD){
+  $total = $SubjectA + $SubjectB+ $SubjectC + $SubjectD;
+  $gpa = $total / 4;
+
+  if ($gpa >=80){
+      echo " You Got A+";
+  }else if ($gpa >=70 && $gpa <=79){
+      echo " You Got A";
+  }else if($gpa >=60 && $gpa <=69){
+      echo " You Got A-";
+  }else if ($gpa >=50 && $gpa <=59){
+      echo " You Got B";
+  }else if ($gpa >=40 && $gpa <=49){
+      echo " You Got C";
+  }else if ($gpa >= 01 && $gpa <=39){
+      echo " You Got F";
+};
+return $gpa ;
+}
+echo  gpa_calculate(20,60,100,90);
 
 
 ?>

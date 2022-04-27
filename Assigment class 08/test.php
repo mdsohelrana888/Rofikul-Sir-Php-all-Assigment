@@ -1,52 +1,51 @@
 <?php
 
-// GPA function for result publishing===============================================
-function gpa_calculate($SubjectA,$SubjectB,$SubjectC,$SubjectD){
-    $total = $SubjectA + $SubjectB+ $SubjectC + $SubjectD;
-    $gpa = $total / 4;
 
-    if ($gpa >=80){
-        echo " You Got A+";
-    }else if ($gpa >=70 && $gpa <=79){
-        echo " You Got A";
-    }else if($gpa >=60 && $gpa <=69){
-        echo " You Got A-";
-    }else if ($gpa >=50 && $gpa <=59){
-        echo " You Got B";
-    }else if ($gpa >=40 && $gpa <=49){
-        echo " You Got C";
-    }else if ($gpa >= 01 && $gpa <=39){
-        echo " You Got F";
-};
-return $gpa ;
+function bmi_calculate($mass, $height, $unit) {
+    $bmi = 0;
+    if ($unit == "Metric") {
+        //BMI = weight (kg) ÷/ ( height * height  ) in Meter
+        $bmi = ($mass / ($height * $height));
+    }
+    if ($unit == "Imperial") {
+        //BMI = weight (lb) x (height inch  * height inch ) x 703
+        $bmi = ($mass / ($height * $height)) * 703;
+    }
+    return round($bmi, 1);
 }
- echo  gpa_calculate(20,60,100,90);
 
-// // <!-- risitas markes -->
-// $SubjectA = 75;
-// $SubjectB = 80;
-// $SubjectC = 65;
-// $SubjectD = 90;
-// // <!-- total markes -->
-
-// // <!-- gpa markes -->
-// $gpa = $total / 4;
-//  echo $gpa ;
-// if ($gpa >=80){
-//     echo " You Got A+";
-// }else if ($gpa >=70 && $gpa <=79){
-//     echo " You Got A";
-// }else if($gpa >=60 && $gpa <=69){
-//     echo " You Got A-";
-// }else if ($gpa >=50 && $gpa <=59){
-//     echo " You Got B";
-// }else if ($gpa >=40 && $gpa <=49){
-//     echo " You Got C";
-// }else if ($gpa >= 01 && $gpa <=39){
-//     echo " You Got F";
-// };
-
-
-
+function bmi_weight($bmi) {
+    $output = "";
+    /*
+     Less than 15	Very severely underweight
+     Between 15 and 16	Severely underweight
+     Between 16 and 18.5	Underweight
+     Between 18.5 and 25	Normal (healthy weight)
+     Between 25 and 30	Overweight
+     Between 30 and 35	Moderately obese
+     Between 35 and 40	Severely obese
+     Over 40	Very severely obese
+     */
+    if ($bmi < 15) {
+        $output = "Very severely underweight";
+    } else if ($bmi >= 15 && $bmi < 16) {
+        $output = "	Severely underweight";
+    } else if ($bmi >= 16 && $bmi < 18.5) {
+        $output = "	Underweight";
+    } else if ($bmi >= 18.5 && $bmi < 25) {
+        $output = "Normal (healthy weight)";
+    } else if ($bmi >= 25 && $bmi < 30) {
+        $output = "Overweight";
+    } else if ($bmi >= 30 && $bmi < 35) {
+        $output = "Moderately obese";
+    } else if ($bmi >= 35 && $bmi < 40) {
+        $output = "Severely obese";
+    } else {
+        $output = "Very severely obese";
+    }
+    return $output;
+}
 
 ?>
+
+

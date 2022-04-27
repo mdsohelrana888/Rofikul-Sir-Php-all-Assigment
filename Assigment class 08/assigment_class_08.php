@@ -44,8 +44,6 @@ function areaSquare($side)
 	return 'Area Of square'. $area;
 }
 
-
-
 echo areaSquare(10);
 echo "<br>";
 echo "<br>";
@@ -60,7 +58,7 @@ echo tri_area(23,10);
 echo "<br>";
 echo "<br>";
 
-// GPA function for result publishing===============================================
+// 3.GPA function for result publishing===============================================
 function gpa_calculate($SubjectA,$SubjectB,$SubjectC,$SubjectD){
   $total = $SubjectA + $SubjectB+ $SubjectC + $SubjectD;
   $gpa = $total / 4;
@@ -81,6 +79,20 @@ function gpa_calculate($SubjectA,$SubjectB,$SubjectC,$SubjectD){
 return $gpa ;
 }
 echo  gpa_calculate(20,60,100,90);
+
+
+echo "<br>";
+echo "<br>";
+// Create an age calculator function
+function getAge($dob,$condate){ 
+  $birthdate = new DateTime(date("Y-m-d",  strtotime(implode('-', array_reverse(explode('/', $dob))))));
+  $today= new DateTime(date("Y-m-d",  strtotime(implode('-', array_reverse(explode('/', $condate))))));           
+  $age = $birthdate->diff($today)->y;
+
+  return $age;
+}
+
+echo getAge('06/06/1996','07/02/2011');
 
 
 ?>

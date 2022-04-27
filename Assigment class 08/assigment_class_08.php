@@ -83,7 +83,7 @@ echo  gpa_calculate(20,60,100,90);
 
 echo "<br>";
 echo "<br>";
-// Create an age calculator function
+// 4.Create an age calculator function
 function getAge($dob,$condate){ 
   $birthdate = new DateTime(date("Y-m-d",  strtotime(implode('-', array_reverse(explode('/', $dob))))));
   $today= new DateTime(date("Y-m-d",  strtotime(implode('-', array_reverse(explode('/', $condate))))));           
@@ -93,6 +93,21 @@ function getAge($dob,$condate){
 }
 
 echo getAge('06/06/1996','07/02/2011');
+echo "<br>";
+echo "<br>";
+// 5.Create a BMI function for health
+function BmiClaculator($wight, $height){
+  $height = $height/100;
+
+  $bmi_result = $wight / ($height * $height);
+  $bmi_result = number_format($bmi_result, 2);
+  return "Your BMI = {$bmi_result}" ;
+
+
+};
+// first argument is weight (kg) and 2nd argument is height( cm )
+echo BmiClaculator( 56, 57);
+
 
 
 ?>

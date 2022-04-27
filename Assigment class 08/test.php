@@ -1,50 +1,17 @@
 <?php
 
+function BmiClaculator($wight, $height){
+    $height = $height/100;
 
-function bmi_calculate($mass, $height, $unit) {
-    $bmi = 0;
-    if ($unit == "Metric") {
-        //BMI = weight (kg) ÷/ ( height * height  ) in Meter
-        $bmi = ($mass / ($height * $height));
-    }
-    if ($unit == "Imperial") {
-        //BMI = weight (lb) x (height inch  * height inch ) x 703
-        $bmi = ($mass / ($height * $height)) * 703;
-    }
-    return round($bmi, 1);
-}
+    $bmi_result = $wight / ($height * $height);
+    $bmi_result = number_format($bmi_result, 2);
+    return "Your BMI = {$bmi_result}" ;
 
-function bmi_weight($bmi) {
-    $output = "";
-    /*
-     Less than 15	Very severely underweight
-     Between 15 and 16	Severely underweight
-     Between 16 and 18.5	Underweight
-     Between 18.5 and 25	Normal (healthy weight)
-     Between 25 and 30	Overweight
-     Between 30 and 35	Moderately obese
-     Between 35 and 40	Severely obese
-     Over 40	Very severely obese
-     */
-    if ($bmi < 15) {
-        $output = "Very severely underweight";
-    } else if ($bmi >= 15 && $bmi < 16) {
-        $output = "	Severely underweight";
-    } else if ($bmi >= 16 && $bmi < 18.5) {
-        $output = "	Underweight";
-    } else if ($bmi >= 18.5 && $bmi < 25) {
-        $output = "Normal (healthy weight)";
-    } else if ($bmi >= 25 && $bmi < 30) {
-        $output = "Overweight";
-    } else if ($bmi >= 30 && $bmi < 35) {
-        $output = "Moderately obese";
-    } else if ($bmi >= 35 && $bmi < 40) {
-        $output = "Severely obese";
-    } else {
-        $output = "Very severely obese";
-    }
-    return $output;
-}
+
+};
+// first argument is weight (kg) and 2nd argument is height( cm )
+echo BmiClaculator( 6, 167);
+
 
 ?>
 

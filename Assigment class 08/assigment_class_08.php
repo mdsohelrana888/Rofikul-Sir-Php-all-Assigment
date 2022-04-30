@@ -106,5 +106,32 @@ function BmiClaculator($wight, $height){
 echo BmiClaculator( 56, 57);
 
 
+// Create a currency converter function from taka to USD, CAD, POUND, EURO etc=======
+function currency_convarter($taka, $currency){
+  $usd = $taka / 85;
+  $usd = number_format($usd, 2);
+  $cad = $taka / 68;
+  $cad = number_format($usd, 2);
+  $pound = $taka / 111;
+  $pound = number_format($usd, 2);
+  $euro = $taka / 93.59;
+  $euro = number_format($usd, 2);
+
+  if ( $currency == "usd" ) {
+    return "USD ={ $usd} <br>";
+  }elseif($currency == "cad" ) {
+    return "CAD ={$cad} <br>";
+  }elseif($currency =="pound" ) {
+    return "POUND ={$pound} <br>";
+  }elseif($currency =="euro" ) {
+    return "EURO ={$euro}";
+  }
+  else{
+    return" This is not posible to convert";
+  }
+}
+echo currency_convarter(5962, "pound");
+
+
 
 ?>
